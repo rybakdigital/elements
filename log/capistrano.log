@@ -421,3 +421,144 @@ The php.ini used by your command-line PHP is: /etc/php/7.1/cli/php.ini
   INFO [0e41adf7] Running cd /var/www/rybakdigital-elements/releases/20171002075708 && bower install as root@46.101.5.86
  DEBUG [0e41adf7] Command: cd /var/www/rybakdigital-elements/releases/20171002075708 && bower install
  DEBUG [0e41adf7] 	bash: bower: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-10-02 09:05:08 +0100 cap demo deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fd785bc7] Running /usr/bin/env mkdir -p /tmp as root@46.101.5.86
+ DEBUG [fd785bc7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fd785bc7] Finished in 0.371 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-rybakdigital-elements-demo-kris.sh 0.0%
+  INFO Uploading /tmp/git-ssh-rybakdigital-elements-demo-kris.sh 100.0%
+  INFO [4251d998] Running /usr/bin/env chmod 700 /tmp/git-ssh-rybakdigital-elements-demo-kris.sh as root@46.101.5.86
+ DEBUG [4251d998] Command: /usr/bin/env chmod 700 /tmp/git-ssh-rybakdigital-elements-demo-kris.sh
+  INFO [4251d998] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [e867aa85] Running /usr/bin/env git ls-remote git@github.com:rybakdigital/elements.git HEAD as root@46.101.5.86
+ DEBUG [e867aa85] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git ls-remote git@github.com:rybakdigital/elements.git HEAD )
+ DEBUG [e867aa85] 	60fcb7b81b6c8ff11b9c8bc819e215cf56dbbf56	HEAD
+  INFO [e867aa85] Finished in 1.789 seconds with exit status 0 (successful).
+  INFO [6e63cc9e] Running /usr/bin/env mkdir -p /var/www/rybakdigital-elements/shared /var/www/rybakdigital-elements/releases as root@46.101.5.86
+ DEBUG [6e63cc9e] Command: /usr/bin/env mkdir -p /var/www/rybakdigital-elements/shared /var/www/rybakdigital-elements/releases
+  INFO [6e63cc9e] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [9b1953ec] Running [ -f /var/www/rybakdigital-elements/current/REVISION ] as root@46.101.5.86
+ DEBUG [9b1953ec] Command: [ -f /var/www/rybakdigital-elements/current/REVISION ]
+ DEBUG [9b1953ec] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [c3b07d42] Running /usr/bin/env cat /var/www/rybakdigital-elements/current/REVISION 2>/dev/null as root@46.101.5.86
+ DEBUG [c3b07d42] Command: /usr/bin/env cat /var/www/rybakdigital-elements/current/REVISION 2>/dev/null
+ DEBUG [c3b07d42] 	693da90fb457f83e919319340fccebbbac162691
+ DEBUG [c3b07d42] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [9bc64070] Running [ -f /var/www/rybakdigital-elements/repo/HEAD ] as root@46.101.5.86
+ DEBUG [9bc64070] Command: [ -f /var/www/rybakdigital-elements/repo/HEAD ]
+ DEBUG [9bc64070] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/rybakdigital-elements/repo
+ DEBUG [6354046d] Running if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [6354046d] Command: if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi
+ DEBUG [6354046d] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [81d0a192] Running /usr/bin/env git remote set-url origin git@github.com:rybakdigital/elements.git as root@46.101.5.86
+ DEBUG [81d0a192] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git remote set-url origin git@github.com:rybakdigital/elements.git )
+  INFO [81d0a192] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [b3a36cda] Running /usr/bin/env git remote update --prune as root@46.101.5.86
+ DEBUG [b3a36cda] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b3a36cda] 	Fetching origin
+ DEBUG [b3a36cda] 	From github.com:rybakdigital/elements
+   693da90..52d913a  develop    -> develop
+  INFO [b3a36cda] Finished in 1.759 seconds with exit status 0 (successful).
+ DEBUG [feff8ae1] Running if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [feff8ae1] Command: if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi
+ DEBUG [feff8ae1] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [0bc347c3] Running /usr/bin/env mkdir -p /var/www/rybakdigital-elements/releases/20171002080511 as root@46.101.5.86
+ DEBUG [0bc347c3] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env mkdir -p /var/www/rybakdigital-elements/releases/20171002080511 )
+  INFO [0bc347c3] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [6624ef37] Running /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/rybakdigital-elements/releases/20171002080511 as root@46.101.5.86
+ DEBUG [6624ef37] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/rybakdigital-elements/releases/20171002080511 )
+  INFO [6624ef37] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [539fcc1b] Running if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [539fcc1b] Command: if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi
+ DEBUG [539fcc1b] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [6f6ed319] Running /usr/bin/env git rev-list --max-count=1 develop as root@46.101.5.86
+ DEBUG [6f6ed319] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [6f6ed319] 	52d913ac52327e6cd7a51a7201f5e1bb8d796070
+ DEBUG [6f6ed319] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [6f5dd53a] Running if test ! -d /var/www/rybakdigital-elements/releases/20171002080511; then echo "Directory does not exist '/var/www/rybakdigital-elements/releases/20171002080511'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [6f5dd53a] Command: if test ! -d /var/www/rybakdigital-elements/releases/20171002080511; then echo "Directory does not exist '/var/www/rybakdigital-elements/releases/20171002080511'" 1>&2; false; fi
+ DEBUG [6f5dd53a] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [92b7a52c] Running /usr/bin/env echo "52d913ac52327e6cd7a51a7201f5e1bb8d796070" >> REVISION as root@46.101.5.86
+ DEBUG [92b7a52c] Command: cd /var/www/rybakdigital-elements/releases/20171002080511 && /usr/bin/env echo "52d913ac52327e6cd7a51a7201f5e1bb8d796070" >> REVISION
+  INFO [92b7a52c] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [f7a81660] Running /usr/bin/env ln -s /var/www/rybakdigital-elements/releases/20171002080511 /var/www/rybakdigital-elements/releases/current as root@46.101.5.86
+ DEBUG [f7a81660] Command: /usr/bin/env ln -s /var/www/rybakdigital-elements/releases/20171002080511 /var/www/rybakdigital-elements/releases/current
+  INFO [f7a81660] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [7f75c5e2] Running /usr/bin/env mv /var/www/rybakdigital-elements/releases/current /var/www/rybakdigital-elements as root@46.101.5.86
+ DEBUG [7f75c5e2] Command: /usr/bin/env mv /var/www/rybakdigital-elements/releases/current /var/www/rybakdigital-elements
+  INFO [7f75c5e2] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [c422693a] Running /usr/bin/env ls -x /var/www/rybakdigital-elements/releases as root@46.101.5.86
+ DEBUG [c422693a] Command: /usr/bin/env ls -x /var/www/rybakdigital-elements/releases
+ DEBUG [c422693a] 	20171002074733	20171002074913	20171002075357	20171002075708	20171002080511
+ DEBUG [c422693a] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on 46.101.5.86
+  INFO No old releases (keeping newest 5) on 46.101.5.86
+ DEBUG [f96d9012] Running if test ! -d /var/www/rybakdigital-elements/releases; then echo "Directory does not exist '/var/www/rybakdigital-elements/releases'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [f96d9012] Command: if test ! -d /var/www/rybakdigital-elements/releases; then echo "Directory does not exist '/var/www/rybakdigital-elements/releases'" 1>&2; false; fi
+ DEBUG [f96d9012] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [9d16476f] Running /usr/bin/env echo "Branch develop (at 52d913ac52327e6cd7a51a7201f5e1bb8d796070) deployed as release 20171002080511 by kris" >> /var/www/rybakdigital-elements/revisions.log as root@46.101.5.86
+ DEBUG [9d16476f] Command: cd /var/www/rybakdigital-elements/releases && /usr/bin/env echo "Branch develop (at 52d913ac52327e6cd7a51a7201f5e1bb8d796070) deployed as release 20171002080511 by kris" >> /var/www/rybakdigital-elements/revisions.log
+  INFO [9d16476f] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO Running composer install
+  INFO [c1a6ee4c] Running cd /var/www/rybakdigital-elements/releases/20171002080511 && composer install as root@46.101.5.86
+ DEBUG [c1a6ee4c] Command: cd /var/www/rybakdigital-elements/releases/20171002080511 && composer install
+ DEBUG [c1a6ee4c] 	Do not run Composer as root/super user! See https://getcomposer.org/root for details
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	Loading composer repositories with package information
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	Installing dependencies (including require-dev) from lock file
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	Package operations: 1 install, 0 updates, 0 removals
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	    Failed to download bradleydyer/capistrano-tasks from dist: The zip extension and unzip command are both missing, skipping.
+The php.ini used by your command-line PHP is: /etc/php/7.1/cli/php.ini
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	    Now trying to download from source
+ DEBUG [c1a6ee4c] 	
+ DEBUG [c1a6ee4c] 	  - Installing bradleydyer/capistrano-tasks (v1.11.0): 
+ DEBUG [c1a6ee4c] 	Cloning c67f0e0140 from cache
+ DEBUG [c1a6ee4c] 	Generating autoload files
+ DEBUG [c1a6ee4c] 	
+  INFO [c1a6ee4c] Finished in 2.244 seconds with exit status 0 (successful).
+  INFO Composer install done
+  INFO Looking for apache virtual host file
+ DEBUG [c33eeb43] Running if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/demo/vhosts/vhost.conf ]; then echo 'true'; fi as root@46.101.5.86
+ DEBUG [c33eeb43] Command: if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/demo/vhosts/vhost.conf ]; then echo 'true'; fi
+ DEBUG [c33eeb43] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [cba9cee3] Running if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/vhosts/vhost.conf ]; then echo 'true'; fi as root@46.101.5.86
+ DEBUG [cba9cee3] Command: if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/vhosts/vhost.conf ]; then echo 'true'; fi
+ DEBUG [cba9cee3] 	true
+ DEBUG [cba9cee3] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO default vhost conf file found!
+  INFO Installing default vhost
+  INFO [8e2db070] Running cp /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/vhosts/vhost.conf /etc/apache2/sites-available/rybakdigital-elements.conf as root@46.101.5.86
+ DEBUG [8e2db070] Command: cp /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/vhosts/vhost.conf /etc/apache2/sites-available/rybakdigital-elements.conf
+  INFO [8e2db070] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO Virtual host conf file has been installed
+  INFO Enabling virtual host
+  INFO [c0db926e] Running sudo a2ensite rybakdigital-elements as root@46.101.5.86
+ DEBUG [c0db926e] Command: sudo a2ensite rybakdigital-elements
+ DEBUG [c0db926e] 	Site rybakdigital-elements already enabled
+  INFO [c0db926e] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO Installing robots file
+ DEBUG [fd4c2149] Running if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/demo/robots/robots.txt ]; then echo 'true'; fi as root@46.101.5.86
+ DEBUG [fd4c2149] Command: if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/demo/robots/robots.txt ]; then echo 'true'; fi
+ DEBUG [fd4c2149] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO Looking for default robots file
+ DEBUG [5c572cb1] Running if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/robots/robots.txt ]; then echo 'true'; fi as root@46.101.5.86
+ DEBUG [5c572cb1] Command: if [ -e /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/robots/robots.txt ]; then echo 'true'; fi
+ DEBUG [5c572cb1] 	true
+ DEBUG [5c572cb1] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO Installing default robots file
+  INFO [047b12a0] Running cp /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/robots/robots.txt /var/www/rybakdigital-elements/releases/20171002080511/web/robots.txt as root@46.101.5.86
+ DEBUG [047b12a0] Command: cp /var/www/rybakdigital-elements/releases/20171002080511/config/environment/default/robots/robots.txt /var/www/rybakdigital-elements/releases/20171002080511/web/robots.txt
+  INFO [047b12a0] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO robots.txt file has been installed
+  INFO Reloading graceful apache
+  INFO [c8b922aa] Running sudo apache2ctl graceful as root@46.101.5.86
+ DEBUG [c8b922aa] Command: sudo apache2ctl graceful
+ DEBUG [c8b922aa] 	AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+  INFO [c8b922aa] Finished in 0.159 seconds with exit status 0 (successful).
