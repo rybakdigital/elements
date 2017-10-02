@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9ebf0673d3059c3c7f38a246409f4e43",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "bradleydyer/capistrano-tasks",
+            "version": "v1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bradleydyer/capistrano-tasks.git",
+                "reference": "c67f0e0140bbc2175719f4024f786239aacd5f61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bradleydyer/capistrano-tasks/zipball/c67f0e0140bbc2175719f4024f786239aacd5f61",
+                "reference": "c67f0e0140bbc2175719f4024f786239aacd5f61",
+                "shasum": ""
+            },
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Rybak",
+                    "email": "kris.rybak@bradleydyer.com"
+                },
+                {
+                    "name": "Anton McCook",
+                    "email": "anton.mccook@bradleydyer.com"
+                }
+            ],
+            "description": "Collection of capistrano tasks",
+            "time": "2017-08-23T09:57:35+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.0"
+    },
+    "platform-dev": []
+}

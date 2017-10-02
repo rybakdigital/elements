@@ -1,0 +1,21 @@
+{
+    "name": "rybakdigital/elements",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "bradleydyer/capistrano-tasks": "^1.11"
+    }
+}

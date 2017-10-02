@@ -1,0 +1,63 @@
+# Logfile created on 2017-10-02 08:47:10 +0100 by logger.rb/41954
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-10-02 08:47:10 +0100 cap demo deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [966e3031] Running /usr/bin/env mkdir -p /tmp as deploy@46.101.5.86
+ DEBUG [966e3031] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-10-02 08:47:30 +0100 cap demo deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [efd0a1d8] Running /usr/bin/env mkdir -p /tmp as root@46.101.5.86
+ DEBUG [efd0a1d8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [efd0a1d8] Finished in 0.352 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-rybakdigital-elements-demo-kris.sh 0.0%
+  INFO Uploading /tmp/git-ssh-rybakdigital-elements-demo-kris.sh 100.0%
+  INFO [0e821938] Running /usr/bin/env chmod 700 /tmp/git-ssh-rybakdigital-elements-demo-kris.sh as root@46.101.5.86
+ DEBUG [0e821938] Command: /usr/bin/env chmod 700 /tmp/git-ssh-rybakdigital-elements-demo-kris.sh
+  INFO [0e821938] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [50b3c1a9] Running /usr/bin/env git ls-remote git@github.com:rybakdigital/elements.git HEAD as root@46.101.5.86
+ DEBUG [50b3c1a9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git ls-remote git@github.com:rybakdigital/elements.git HEAD )
+ DEBUG [50b3c1a9] 	Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+ DEBUG [50b3c1a9] 	348cb910ba1d7d9d2fba243bc1265a35c583861a	HEAD
+  INFO [50b3c1a9] Finished in 1.760 seconds with exit status 0 (successful).
+  INFO [98c84bf3] Running /usr/bin/env mkdir -p /var/www/rybakdigital-elements/shared /var/www/rybakdigital-elements/releases as root@46.101.5.86
+ DEBUG [98c84bf3] Command: /usr/bin/env mkdir -p /var/www/rybakdigital-elements/shared /var/www/rybakdigital-elements/releases
+  INFO [98c84bf3] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [1a5f21d4] Running [ -f /var/www/rybakdigital-elements/current/REVISION ] as root@46.101.5.86
+ DEBUG [1a5f21d4] Command: [ -f /var/www/rybakdigital-elements/current/REVISION ]
+ DEBUG [1a5f21d4] Finished in 0.070 seconds with exit status 1 (failed).
+ DEBUG [744c2864] Running [ -f /var/www/rybakdigital-elements/repo/HEAD ] as root@46.101.5.86
+ DEBUG [744c2864] Command: [ -f /var/www/rybakdigital-elements/repo/HEAD ]
+ DEBUG [744c2864] Finished in 0.070 seconds with exit status 1 (failed).
+ DEBUG [f19b88c9] Running if test ! -d /var/www/rybakdigital-elements; then echo "Directory does not exist '/var/www/rybakdigital-elements'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [f19b88c9] Command: if test ! -d /var/www/rybakdigital-elements; then echo "Directory does not exist '/var/www/rybakdigital-elements'" 1>&2; false; fi
+ DEBUG [f19b88c9] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [acaa1126] Running /usr/bin/env git clone --mirror git@github.com:rybakdigital/elements.git /var/www/rybakdigital-elements/repo as root@46.101.5.86
+ DEBUG [acaa1126] Command: cd /var/www/rybakdigital-elements && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git clone --mirror git@github.com:rybakdigital/elements.git /var/www/rybakdigital-elements/repo )
+ DEBUG [acaa1126] 	Cloning into bare repository '/var/www/rybakdigital-elements/repo'...
+  INFO [acaa1126] Finished in 1.598 seconds with exit status 0 (successful).
+ DEBUG [5c0fa163] Running if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [5c0fa163] Command: if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi
+ DEBUG [5c0fa163] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [c6ebaeb7] Running /usr/bin/env git remote set-url origin git@github.com:rybakdigital/elements.git as root@46.101.5.86
+ DEBUG [c6ebaeb7] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git remote set-url origin git@github.com:rybakdigital/elements.git )
+  INFO [c6ebaeb7] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [e86dabeb] Running /usr/bin/env git remote update --prune as root@46.101.5.86
+ DEBUG [e86dabeb] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e86dabeb] 	Fetching origin
+  INFO [e86dabeb] Finished in 1.443 seconds with exit status 0 (successful).
+ DEBUG [e796e84c] Running if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi as root@46.101.5.86
+ DEBUG [e796e84c] Command: if test ! -d /var/www/rybakdigital-elements/repo; then echo "Directory does not exist '/var/www/rybakdigital-elements/repo'" 1>&2; false; fi
+ DEBUG [e796e84c] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [1a343c94] Running /usr/bin/env mkdir -p /var/www/rybakdigital-elements/releases/20171002074733 as root@46.101.5.86
+ DEBUG [1a343c94] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env mkdir -p /var/www/rybakdigital-elements/releases/20171002074733 )
+  INFO [1a343c94] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [22f45182] Running /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/rybakdigital-elements/releases/20171002074733 as root@46.101.5.86
+ DEBUG [22f45182] Command: cd /var/www/rybakdigital-elements/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rybakdigital-elements-demo-kris.sh" ; /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/rybakdigital-elements/releases/20171002074733 )
+ DEBUG [22f45182] 	fatal: Not a valid object name
+ DEBUG [22f45182] 	tar: 
+ DEBUG [22f45182] 	This does not look like a tar archive
+ DEBUG [22f45182] 	
+ DEBUG [22f45182] 	tar: 
+ DEBUG [22f45182] 	Exiting with failure status due to previous errors
+ DEBUG [22f45182] 	
