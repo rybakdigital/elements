@@ -8,8 +8,8 @@ set :apache_vhosts_folder,             '/etc/apache2/sites-available'
 set :app_path,                         'web'
 set :symfony_parameters_source_folder, '/etc/rybakdigital/sites'
 
-after ":deploy:updated", "composer:installer:install"
-after ":deploy:updated", "apache:vhost:install"
-after ":deploy:updated", "apache:vhost:enable"
-after ":deploy:updated", "robots:install"
-after ":deploy:updated", "apache:apache2ctl:graceful"
+after "deploy:updated", "composer:installer:install"
+after "deploy:updated", "apache:vhost:install"
+after "deploy:updated", "apache:vhost:enable"
+after "deploy:updated", "robots:install"
+after "deploy:updated", "apache:apache2ctl:graceful"
